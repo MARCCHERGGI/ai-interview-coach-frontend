@@ -1,0 +1,81 @@
+/* /frontend/styles/global.css */
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Chat Container */
+.chat-container {
+  @apply bg-white shadow-lg rounded-lg p-4 overflow-y-auto;
+  max-height: 65vh;
+}
+
+/* Chat Bubble Base */
+.chat-bubble {
+  @apply p-3 rounded-md transition-all ease-in-out duration-300;
+  max-width: 80%;
+}
+
+/* AI Message: Left aligned */
+.chat-bubble.ai {
+  @apply self-start bg-blue-100 text-blue-900;
+}
+
+/* User Message: Right aligned */
+.chat-bubble.user {
+  @apply self-end bg-green-100 text-green-900;
+}
+
+/* Feedback Message */
+.chat-bubble.feedback {
+  @apply self-start bg-yellow-100 text-yellow-900;
+}
+
+/* Error Message */
+.chat-bubble.error {
+  @apply self-center bg-red-100 text-red-900;
+}
+
+/* Chat Content */
+.chat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Text */
+.chat-text {
+  font-size: 14px;
+}
+
+/* Chat Timestamp */
+.chat-timestamp {
+  font-size: 10px;
+  color: #777;
+  margin-top: 5px;
+  align-self: flex-end;
+}
+
+/* Chat Input Form */
+.chat-input {
+  @apply flex w-full gap-2 mt-4;
+}
+
+/* Input Box */
+.input-box {
+  @apply flex-1 border border-gray-300 p-2 rounded-l-2xl focus:outline-none;
+}
+
+/* Send Button */
+.send-button {
+  @apply bg-indigo-500 text-white p-2 rounded-r-2xl font-bold;
+}
+
+.send-button:hover {
+  @apply bg-indigo-700;
+}

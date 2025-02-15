@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "Customer Service",
+      "difficulty": "Medium",
+      "question": "Describe a time when you resolved a customer's complaint in a restaurant setting."
+    },
+    {
+      "id": 2,
+      "category": "Customer Service",
+      "difficulty": "Easy",
+      "question": "How do you greet and welcome guests when they enter the restaurant?"
+    },
+    {
+      "id": 3,
+      "category": "Problem-Solving",
+      "difficulty": "Hard",
+      "question": "What steps would you take if the kitchen runs out of a key ingredient during a busy service?"
+    },
+    {
+      "id": 4,
+      "category": "Experience",
+      "difficulty": "Medium",
+      "question": "Tell me about your previous experience working in a fast-paced restaurant environment."
+    },
+    {
+      "id": 5,
+      "category": "Teamwork",
+      "difficulty": "Easy",
+      "question": "How do you collaborate with kitchen and service staff to ensure a smooth dining experience?"
+    },
+    {
+      "id": 6,
+      "category": "Customer Service",
+      "difficulty": "Medium",
+      "question": "Can you describe a situation where you handled an irate customer and how you resolved their issue?"
+    },
+    {
+      "id": 7,
+      "category": "Problem-Solving",
+      "difficulty": "Medium",
+      "question": "How would you handle a situation where a customer complains about undercooked food?"
+    },
+    {
+      "id": 8,
+      "category": "Experience",
+      "difficulty": "Hard",
+      "question": "What strategies do you use to manage stress during peak hours in a restaurant?"
+    },
+    {
+      "id": 9,
+      "category": "Teamwork",
+      "difficulty": "Medium",
+      "question": "Describe how you contribute to creating a positive team environment in a restaurant setting."
+    },
+    {
+      "id": 10,
+      "category": "Customer Service",
+      "difficulty": "Hard",
+      "question": "What techniques do you use to ensure customers leave satisfied and likely to return?"
+    },
+    {
+      "id": 11,
+      "category": "Problem-Solving",
+      "difficulty": "Easy",
+      "question": "Describe a time when you had to quickly adapt to a sudden change during your shift."
+    },
+    {
+      "id": 12,
+      "category": "Experience",
+      "difficulty": "Medium",
+      "question": "How do you manage multiple tasks simultaneously during busy periods?"
+    }
+  ]
+}
