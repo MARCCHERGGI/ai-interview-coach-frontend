@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
-import PaymentModal from "../components/PaymentModal";
 
 export default function Settings() {
-  // State for Timed Mode toggle and Payment Modal visibility
+  // State for Timed Mode toggle
   const [timedMode, setTimedMode] = useState(false);
-  const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [error, setError] = useState("");
 
   // Load saved settings from localStorage on component mount
@@ -32,16 +30,6 @@ export default function Settings() {
     }
   };
 
-  // Open the payment modal for upgrading to premium
-  const handleUpgrade = () => {
-    setShowPaymentModal(true);
-  };
-
-  // Close the payment modal
-  const handleCloseModal = () => {
-    setShowPaymentModal(false);
-  };
-
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white shadow-md rounded p-6 max-w-lg w-full">
@@ -65,23 +53,6 @@ export default function Settings() {
             </label>
           </div>
         </div>
-
-        {/* Premium Upgrade Section */}
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">Premium Upgrade</h2>
-          <p className="text-gray-700 mb-2">
-            Upgrade to Premium for exclusive features and benefits.
-          </p>
-          <button
-            onClick={handleUpgrade}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none"
-          >
-            Upgrade to Premium
-          </button>
-        </div>
-
-        {/* Payment Modal */}
-        {showPaymentModal && <PaymentModal onClose={handleCloseModal} />}
       </div>
     </div>
   );
