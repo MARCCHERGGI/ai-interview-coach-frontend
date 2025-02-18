@@ -1,9 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/next"
+      "source": "/api/:path*",
+      "destination": "https://ai-interview-coach-backend-production.up.railway.app/api/:path*"
     }
   ]
 }
